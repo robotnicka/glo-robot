@@ -137,9 +137,11 @@
    Slider
    ========================================================================== */
     #slider {
-        height:400px;
         background:#ccc;
         zoom:1;
+    }
+    #slider img {
+        width:100%;
     }
 
 /* ==========================================================================
@@ -291,6 +293,11 @@
         padding-right:40px;
         width:200px;
     }
+    .slider { height:312px; }
+}
+
+@media only screen {
+    .slider { height:400px; }  
 }
 
 /* #Misc
