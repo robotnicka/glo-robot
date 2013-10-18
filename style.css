@@ -1,0 +1,301 @@
+@import url('normalize.css');
+@import url('main.css');
+@import url('layout.css');
+
+/* ==========================================================================
+    *  Coding done by
+    *  Emily Mentrek
+    *  in the Fall of 2013
+    *  for Gloucester Township, NJ, USA
+    
+   ========================================================================== */
+   
+    body {
+        background: #d2dad8; 
+    	font: 16px/21px 'noto_sansregular', "Noto Sans", sans-serif;
+    	color:#314046;
+    	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    	-webkit-text-size-adjust: 100%;
+    	padding-bottom:250px;
+    }
+    
+    #container {
+        min-height:100%;
+        position:relative;
+        height: auto !important;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+
+/* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 { 
+	    font:46px/50px 'open_sanscondensed_light', sans-serif; 
+	    color: #3bb0df; 
+	    text-transform: uppercase;
+        margin:25px 0;
+    }
+	h2 { 
+	    font-size: 35px; 
+	    line-height: 40px; 
+	    margin-bottom: 10px; 
+	}
+	h3 { 
+	    font-size: 28px; 
+	    line-height: 34px; 
+	    margin-bottom: 8px; 
+	}
+	h4 { 
+	    font-size: 21px; 
+	    line-height: 30px; 
+	    margin-bottom: 4px; 
+	}
+	h5 { 
+	    font-size: 17px; 
+	    line-height:24px;
+	}
+	h6 { 
+	    font-size: 14px; 
+	    line-height: 16px; 
+	}
+	.subheader { 
+	    color: #777; 
+	 }
+	p { margin: 0 0 20px 0; }
+	p img { margin: 0; }
+	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+	em { font-style: italic; }
+	strong { font-weight: bold; color: #333; }
+	small { font-size: 80%; }
+
+/*	Blockquotes  */
+	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+	blockquote cite { display: block; font-size: 12px; color: #555; }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+	
+/* #Links
+================================================== */
+	a, a:visited { color: #333; text-decoration: underline; outline: 0; }
+	a:hover, a:focus { color: #000; }
+	p a, p a:visited { line-height: inherit; }
+
+/* #Lists
+================================================== */
+	ul, ol { margin-bottom: 20px; }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 6px; }
+	li { line-height: 18px; margin-bottom: 12px; }
+	ul.large li { line-height: 21px; }
+	li p { line-height: 21px; }
+	li { margin:0; }
+
+/* #Images
+================================================== */
+
+	img.scale-with-grid {
+		max-width: 100%;
+		height: auto; }
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+    #nav {
+        background:#314046;
+        height:60px;
+        width:100%;
+        color:#fff;
+    }
+    
+    nav ul li {
+        display:inline-block;
+        width:150px;
+        margin-top:20px;
+    }
+    
+    nav ul li a {
+        color:#fff;
+        text-decoration:none;
+    }
+    nav ul li a:hover {
+        color:#d2dad8
+    }
+
+/* ==========================================================================
+   Slider
+   ========================================================================== */
+    #slider {
+        height:400px;
+        background:#ccc;
+        zoom:1;
+    }
+
+/* ==========================================================================
+   Live Work Play, Phone #s, Address
+   ========================================================================== */
+    .lwp {
+        height:700px;
+        background:#fff;
+    }
+    
+    .lwp h1 {
+        color:#314046;
+    }
+    
+    .social ul {
+        padding:15px 0 0 0px;
+    }
+    
+    .social ul li {
+       display:block;
+       float:left;
+       padding: 0 6px;
+    }
+    
+    .address-header {
+    	font-weight:700;
+    	text-transform:uppercase;
+    }
+    
+    .address img {
+        float:left;
+        margin:10px 20px 23px 10px;
+    }
+    
+    .phone-number {
+        float:left;
+    }
+    
+    .phone, .address {
+        margin:30px 0 0 0;
+        font-size:14px;
+    }
+    
+    .phone table {
+        width:100%;
+    }
+    
+    .phone table tbody tr td, 
+    .phone table thead tr th {
+        padding-bottom:20px;
+        text-align:left;
+    }
+    
+    .phone table tbody tr td:nth-child(2), 
+    .phone table thead tr th:nth-child(2) {
+        text-align:right;
+    }
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+    .sidebar {
+        background:#3bb0df;
+        width:220px;
+        height:1185px;
+        position: absolute;
+        margin-top:25px;
+        padding-right:30px;
+        display:inline-block;
+        color:#fff;
+        text-transform:uppercase;
+    }
+    
+    .sidebar ul li {
+        margin: 30px 0 30px 20px;
+        font-size:14px;
+    }
+
+/* ==========================================================================
+   News/Announcements Articles    \    Around Icons
+   ========================================================================== */
+   
+    .news {
+        background:#fff;
+        margin-top:25px;
+       /* margin-left: 180px; */
+        height: 710px;
+        position:relative;
+        left:180px;
+    }
+    .news h1, .around p, .around h1, .news p {
+        padding:0 50px;
+    }
+    
+    .around-container, {
+        height: 475px;
+        background: #FFF;
+        position:relative;
+        margin-top:25px;
+        left:180px;
+    }
+
+    
+/* ==========================================================================
+   Inside pages
+   ========================================================================== */
+   
+   .innerpage {
+       background:#fff;
+       padding:50px;
+   }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+   
+    footer {
+        font-size:12px;
+        background:#314046;
+        height:250px;
+        color:#a4a5a6;
+        position:absolute; 
+        width:100%; 
+    }
+    footer h5 {
+        font-weight:bold;
+        padding:15px 0;
+        font-size:14px;
+    }
+    footer ul li {
+        padding-bottom:10px;
+    }
+    .footer {
+        padding-top:15px;
+    }
+   .footer a, .footer a:visited; {
+       color::#a4a5a6;
+   }
+/* MEDIA ADJUSTMENTS FOR RESPONSIVENESS */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    h1 { font-size:2.3em; }
+    .social ul li {
+        padding:0 3px;
+    }
+    p { font-size:.95em; }
+    .sidebar {
+        padding-right:40px;
+        width:200px;
+    }
+}
+
+/* #Misc
+================================================== */
+	.remove-bottom { margin-bottom: 0 !important; }
+	.half-bottom { margin-bottom: 10px !important; }
+	.add-bottom { margin-bottom: 20px !important; }
+   
