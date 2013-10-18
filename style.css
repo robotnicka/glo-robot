@@ -207,7 +207,7 @@
         width:220px;
         height:1185px;
         position: absolute;
-        margin-top:25px;
+        margin-top:50px;
         padding-right:30px;
         display:inline-block;
         color:#fff;
@@ -226,7 +226,6 @@
     .news {
         background:#fff;
         margin-top:25px;
-       /* margin-left: 180px; */
         height: 710px;
         position:relative;
         left:180px;
@@ -235,14 +234,15 @@
         padding:0 50px;
     }
     
-    .around-container, {
+    .news h1, .around h1 { padding-top:50px;}
+    
+    .around {
         height: 475px;
         background: #FFF;
         position:relative;
         margin-top:25px;
         left:180px;
     }
-
     
 /* ==========================================================================
    Inside pages
