@@ -86,7 +86,7 @@
 
 /* #Lists
 ================================================== */
-	ul, ol { margin-bottom: 20px; }
+    ul, ol { margin-bottom: 20px; } 
 	ul { list-style: none outside; }
 	ol { list-style: decimal; }
 	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
@@ -112,26 +112,31 @@
 /* ==========================================================================
    Navigation
    ========================================================================== */
-    #nav {
-        background:#314046;
+    header {
+        background-color:#314046;
         height:60px;
         width:100%;
-        color:#fff;
+        position:relative;
     }
-    
-    nav ul li {
+    nav { position:relative; }
+    nav ul, nav ul li a, nav ul li, h1.nav { 
         display:inline-block;
-        width:150px;
-        margin-top:20px;
-    }
-    
+    }    
+    nav { height:100%; }
+    nav ul { position:absolute; }
+    h1.nav { font:bold 20px/20px 'noto_sansregular', "Noto Sans", sans-serif; margin:0; } 
     nav ul li a {
+        padding:0 0 0 2em;
         color:#fff;
         text-decoration:none;
     }
-    nav ul li a:hover {
+    nav ul li a:hover, nav ul li a:visited {
         color:#d2dad8
     }
+    img.logo { position:absolute; z-index:4; }
+    
+
+    
 
 /* ==========================================================================
    Slider
@@ -147,12 +152,11 @@
 /* ==========================================================================
    Live Work Play, Phone #s, Address
    ========================================================================== */
-    .lwp {
-        height:700px;
+    .intro {
         background:#fff;
     }
     
-    .lwp h1 {
+    .intro h1 {
         color:#314046;
     }
     
@@ -262,7 +266,7 @@
     footer {
         font-size:12px;
         background:#314046;
-        height:250px;
+        height:275px;
         color:#a4a5a6;
         position:absolute; 
         width:100%; 
@@ -271,15 +275,19 @@
         font-weight:bold;
         padding:15px 0;
         font-size:14px;
+        text-transform:uppercase;
     }
     footer ul li {
-        padding-bottom:10px;
+        padding-bottom:10px;8a8
     }
-    .footer {
+    footer {
         padding-top:15px;
     }
-   .footer a, .footer a:visited; {
-       color::#a4a5a6;
+   footer a, footer a:visited {
+       color:#fff;
+   }
+   footer a:hover {
+       color:#a4a5a6;
    }
 /* MEDIA ADJUSTMENTS FOR RESPONSIVENESS */
 
@@ -289,16 +297,23 @@
         padding:0 3px;
     }
     p { font-size:.95em; }
+    .phone, .address { font-size:.8em; }
     .sidebar {
         padding-right:40px;
         width:200px;
     }
-    .slider { height:312px; }
+   /* .slider { height:312px; } */
+    .intro {
+        height:600px;
+        }
 }
 
-@media only screen {
-    .slider { height:400px; }  
+@media only screen and (max-width: 767px) {
+    .info { display:none; } img.logo {display:none; width:30%;}
+    
 }
+
+
 
 /* #Misc
 ================================================== */
