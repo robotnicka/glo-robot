@@ -21,27 +21,31 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header>
-        <nav id="nav">
-            <ul class="container sixteen columns">
+        <nav class="container sixteen columns">
+        <div class="three columns alpha omega"><img class="logo" src="img/ui/testing/glotwp-logo-wordless.png" alt="Gloucester Township logo" /></div>
+        
+            <ul class="thirteen columns alpha omega">
+            <li><h1 class="nav">Gloucester<br />Township</h1></li>
                 <li><a href="#">About GT</a></li>
-                <li><a href="#">Residents</a></li>
+                <li></li>a href="#">Residents</a></li>
                 <li><a href="#">Government</a></li>
                 <li><a href="#">Departments</a></li>
+                <li><a href="#">I want to...</a></li>
             </ul>
         </nav>
     </header>
     
-    <div class="lwp">
+    <div class="intro">
     <!-- slider -->
     <div class="container sixteen columns">
     <section id="slider">
     <img src="img/ui/testing/test-slider.jpg" />
     </section>
     <!-- end slider-->
-    <aside class="one-third column social">
-        <h1>A great place to<br />live, work &amp; play</h1>
+    <aside class="one-third column social info">
+        <h1 class="info">A great place to<br />live, work &amp; play</h1>
         <!-- social icons -->
-        <ul>
+        <ul class="socialicon info">
             <li><a href="#"><img src="img/ui/socialicons/connect.png" alt="Email"/></a></li>
             <li><a href="#"><img src="img/ui/socialicons/Facebook.png" alt="Facebook" /></a></li>
             <li><a href="#"><img src="img/ui/socialicons/Flickr.png" alt="Flickr" /></a></li>
@@ -53,24 +57,24 @@
         <!-- end social icons -->
         <!-- phone number, address -->
             <div class="address one-third column">
-        		<img src="img/ui/addressicons/building.png" alt="Building address image" /><p>
+        	    <span class="info"><img class="info" src="img/ui/addressicons/building.png" alt="Building address image" /><p>
         			<strong class="address-header">Building address</strong><br />
         			1261 Chews Landing Rd.<br />
         			Laurel Springs, NJ 08021
         		</p>
-        		<img src="img/ui/addressicons/mailing.png" alt="Mailing address icon" /><p>
+        		<img class="info" src="img/ui/addressicons/mailing.png" alt="Mailing address icon" /><p>
         			<strong class="address-header">Mailing address</strong><br />
         			PO Box 8<br />
         			Blackwood, NJ 08012
         		</p>
-        		<img src="img/ui/addressicons/hours.png" alt="Office hours icon" /><p>
+        		<img class="info" src="img/ui/addressicons/hours.png" alt="Office hours icon" /><p>
         			<strong class="address-header">Office hours</strong><br />
         			Monday - Thursday<br />
         			8 AM - 5:45 PM
-        		</p>
+        		</p></span>
     	    </div>
     	    <div class="phone one-third column">
-    	    <table>
+    	    <table class="info">
     	        <thead>
             		<tr>
             			<th><strong class="address-header">Phone numbers</strong></th>
@@ -162,15 +166,16 @@ Suspendisse neque lorem, suscipit a nisi vel, malesuada condimentum mi. Vestibul
                 </ul>
         </section>
         <section class="five columns footer">
-            <h5>&nbsp;</h5>
+            <h5>Contact Us</h5>
             <ul>
-                <li>Email: glotwp@glotwp.com</li>
-                <li>856-228-4000</li>
                 <li>1261 Chews Landing Road<br />Laurel Springs, NJ 08012</li>
+                <li>PO Box 8<br />Blackwood, NJ 08012</li>
+                <li>856-228-4000</li>
+                <li>Email: glotwp@glotwp.com</li>
             </ul>
         </section>
         <section class="sixteen columns footer">
-            &copy; <?php echo date("Y"); ?> Gloucester Township. <a href="mailto:webmaster@glotwp.com">Website comments?</a>
+            <p>&copy; <?php echo date("Y"); ?> Gloucester Township. <a href="mailto:webmaster@glotwp.com">Website comments?</a></p>
         </section>
         </div>
     </footer>
